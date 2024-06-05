@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Muslistahub</title>
+</head>
+<body>
+  <header>
+    <h1>Muslistahub</h1>
+  </header>
+
+<nav class="dropdown-menu">
+    <ul>
+        <li><a href="#">Пункт 1</a></li>
+        <li><a href="#">Пункт 2</a></li>
+        <li><a href="#">Пункт 3</a></li>
+    </ul>
+</nav>
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Пошук...">
+    </div>
+    <div class="post-form">
+      <input type="text" id="postTitle" placeholder="Назва допису">
+      <textarea id="postContent" placeholder="Текст допису"></textarea>
+      <input type="file" id="postAudio" accept="audio/mp3, wav">
+      <button id="publishButton">Опублікувати</button>
+    </div>
+    <div id="postsContainer">
+      <!-- Тут будуть дописи -->
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Muslistahub. Всі права захищені.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

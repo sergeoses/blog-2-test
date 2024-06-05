@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+.content {
+  flex: 1;
+  padding: 1em;
+}
+.search-bar, .post-form {
+  margin-bottom: 1em;
+}
+.post {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+.post button {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.post button:hover {
+  background-color: #045A3D;
+}
+
+  .search-bar input, .post-form input, .post-form textarea {
+    width: 100%;
+  }
+  .post-form input[type="file"] {
+    display: block;
+    margin-bottom: 1em;
+  }
+ 
+
+/* iPhone 5/SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Ваші стилі для iPhone 5/SE тут */
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Ваші стилі для iPhone 6/7/8 тут */
+}
+
+/* iPhone 6+/7+/8+ */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* Ваші стилі для iPhone 6+/7+/8+ тут */
+}
+
+/* iPhone X, XS, 11 Pro, 12 Mini, 13 Mini */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* Ваші стилі для iPhone X, XS, 11 Pro, 12 Mini, 13 Mini тут */
+}
+
+/* iPhone XR, 11, 12, 13, 14 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Ваші стилі для iPhone XR, 11, 12, 13, 14 тут */
+}
+
+/* iPhone XS Max, 11 Pro Max, 12 Pro Max, 13 Pro Max */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* Ваші стилі для iPhone XS Max, 11 Pro Max, 12 Pro Max, 13 Pro Max тут */
+}
+
+/* iPhone SE (1st to 3rd gen), 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Ваші стилі для iPhone SE (1st to 3rd gen), 7, 8 тут */
+}
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-menu li:hover > ul {
+    display: block;
+}
+@media (max-width: 768px) {
+    .dropdown-menu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .dropdown-menu ul ul {
+        position: static;
+    }
+}
+
+.dropdown-menu ul {
+    display: flex; /* Застосовуємо flexbox для горизонтального вирівнювання */
+    padding-left: 0; /* Видаляємо відступи зліва */
+    margin: 0; /* Видаляємо зовнішні відступи */
+    list-style-type: none; /* Видаляємо маркери списку */
+}
+
+.dropdown-menu li {
+    margin-right: 10px; /* Додаємо відступ між пунктами меню */
+}
+
+.dropdown-menu a {
+    text-decoration: none; /* Видаляємо підкреслення посилань */
+    color: #333; /* Задаємо колір тексту */
+    padding: 10px 15px; /* Додаємо відступи навколо тексту */
+    display: block; /* Робимо посилання блочними елементами */
+}
+
+.dropdown-menu li:hover > ul {
+    display: flex; /* Показуємо випадаюче меню при наведенні */
+    flex-direction: column; /* Випадаюче меню буде в колонку */
+}
+
